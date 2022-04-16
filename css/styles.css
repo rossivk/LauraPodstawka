@@ -229,6 +229,7 @@ nav {
 
 /* Tablet menu */
 @media all and (min-width: 700px) {
+
   .socialIcon li.item.social {
     display: flex;
     cursor: pointer;
@@ -627,7 +628,16 @@ to {
   display: flex;
   justify-content: center;
   align-items: center;
+}
 
+#contactMe .box a {
+  cursor: pointer;
+  transition: 0.5s;
+}
+
+#contactMe .box a:hover {
+  color: #D98908;
+  font-size: 1.125rem;
 }
 
 #contactMe h3 {
@@ -778,6 +788,10 @@ fieldset {
 .footer-link:hover {
   color: #D98908;
   font-weight: 500;
+}
+
+.footer li.item {
+  cursor: pointer;
 }
 
 
