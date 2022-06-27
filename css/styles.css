@@ -385,16 +385,19 @@ nav {
   }
 }
 
-/* from {
-  color: #D98908;
-  left: 50px;
+.main .text h6 {
+  position: relative;
+  animation-name: scale;
+  animation-duration: 5s;
 }
 
-to {
-  color: #ABCBDD;
-  left: 0px
-} */
-
+@keyframe scale {
+  0%{
+    opacity: 0;
+  }
+  100%{opacity: 1;}
+}
+  
 
 #myStory,
 .coaching {
