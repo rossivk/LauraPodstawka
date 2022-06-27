@@ -391,7 +391,7 @@ nav {
   animation-duration: 5s;
 }
 
-@keyframe scale {
+@keyframes scale {
   0%{
     opacity: 0;
   }
