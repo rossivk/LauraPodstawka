@@ -8,6 +8,7 @@
 } */
 
 html {
+  scroll-behavior: smooth;
   background: #011D27;
   z-index: -1;
 }
