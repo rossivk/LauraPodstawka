@@ -413,7 +413,7 @@ nav {
 
 #gallery {
   background: linear-gradient(0deg, #C14700ff, #0D0E26ff, #0D0E26ff, #0D0E26ff);
-  padding: 300px 0 100px;
+  padding: 300px 0 0;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -545,6 +545,10 @@ nav {
   transform: translateX(0);
 }
 
+.lottie-graph {
+  max-width: 150px;
+  margin: 0 auto;
+}
 
 
 /***********X************GALLERY***********X************/
