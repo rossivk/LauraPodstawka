@@ -3,7 +3,7 @@
   --color-main-dark-transperant: rgba(13, 14, 38, 0.75);
   --color-secodary: #727DBDff;
   --color-text: #DFDEDFff;
-  --color-accent: #C14700ff;
+  --color-accent: #cd692eff;
 }
 
 html {
@@ -131,8 +131,8 @@ nav {
 }
 
 .companyName .logo img {
-  height: 75px;
-  width: 75px;
+  height: 50px;
+  width: 50px;
 }
 
 .item:not(.social) a:hover,
@@ -235,6 +235,11 @@ nav {
 
   .companyName {
     width: 10%;
+  }
+
+  .companyName .logo img {
+    height: 75px;
+    width: 75px;
   }
 
   .mainMenu {
