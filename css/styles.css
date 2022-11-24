@@ -1,15 +1,14 @@
 :root {
-  --rich-black-fogra-29: #011d27ff;
-  --blue-sapphire: #29657fff;
-  --columbia-blue: #abcbddff;
-  --alice-blue: #ebf2faff;
-  --cultured: #f1f5f8ff;
-  --harvest-gold: #d98908ff;
+  --color-main-dark: #0D0E26ff;
+  --color-main-dark-transperant: rgba(13, 14, 38, 0.75);
+  --color-secodary: #727DBDff;
+  --color-text: #DFDEDFff;
+  --color-accent: #C14700ff;
 }
 
 html {
   scroll-behavior: smooth;
-  background: var(--rich-black-fogra-29);
+  background: var(--color-main-dark);
   z-index: -1;
 }
 
@@ -21,7 +20,7 @@ body {
 }
 
 h1 {
-  color: var(--columbia-blue);
+  color: var(--color-text);
   font-family: 'Expletus Sans', cursive;
   font-size: 10vw;
   font-weight: 900;
@@ -29,7 +28,7 @@ h1 {
 }
 
 h2 {
-  color: var(--alice-blue);
+  color: var(--color-text);
   font-family: 'Expletus Sans', cursive;
   font-size: 8vw;
   font-weight: 700;
@@ -37,7 +36,7 @@ h2 {
 }
 
 h3 {
-  color: var(--alice-blue);
+  color: var(--color-text);
   font-family: 'Expletus Sans', cursive;
   font-size: 5vw;
   font-weight: 600;
@@ -45,7 +44,7 @@ h3 {
 }
 
 h4 {
-  color: var(--alice-blue);
+  color: var(--color-text);
   font-family: 'Expletus Sans', cursive;
   font-size: 4vw;
   font-weight: 500;
@@ -54,43 +53,20 @@ h4 {
 
 
 h6 {
-  color: var(--alice-blue);
+  color: var(--color-text);
   font-family: 'Qwitcher Grypen', cursive;
   font-size: 2rem;
   font-weight: 400;
 }
 
-@media all and (min-width: 550px) {
-  h1 {
-    font-size: 3.5rem;
-  }
 
-  h2 {
-    font-size: 2.75rem;
-  }
-
-  h3 {
-    font-size: 1.75rem;
-
-  }
-
-  h4 {
-    font-size: 1.25rem;
-  }
-
-  h6 {
-    font-size: 3rem;
-    font-weight: 600;
-    margin: 50px 0;
-  }
-}
 
 .btn {
   border: none;
   border-radius: 5px;
   -webkit-border-radius: 5px;
   -moz-border-radius: 5px;
-  background: var(--harvest-gold);
+  background: var(--color-accent);
   padding: 10px 20px;
   margin: 10px 0;
   text-decoration: none;
@@ -99,8 +75,8 @@ h6 {
 
 .btn:hover {
   background: transparent;
-  border: 1px solid var(--harvest-gold);
-  color: var(--harvest-gold);
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
   text-decoration: none;
   -ms-transform: scale(1.05);
   /* IE 9 */
@@ -112,9 +88,9 @@ h6 {
 a,
 p,
 .btn {
-  color: var(--alice-blue);
+  color: var(--color-text);
   font-family: 'Hind', sans-serif;
-  font-size: 1.125rem;
+  font-size: 1rem;
   font-weight: 300;
   letter-spacing: 0.05rem;
 }
@@ -123,19 +99,15 @@ a {
   text-decoration: none;
 }
 
-a,
-p {
-  opacity: 0.85;
-}
 
 i {
-  color: var(--alice-blue);
+  color: var(--color-text);
   font-size: 1.5rem;
 }
 
 ul,
 li {
-  color: var(--alice-blue);
+  color: var(--color-text);
   font-family: 'Hind', sans-serif;
   list-style-type: none;
   padding: 0;
@@ -159,13 +131,13 @@ nav {
 }
 
 .companyName .logo img {
-  height: 50px;
-  width: 50px;
+  height: 75px;
+  width: 75px;
 }
 
 .item:not(.social) a:hover,
 .item a:hover::after {
-  color: var(--harvest-gold);
+  color: var(--color-accent);
 }
 
 /* Mobile menu */
@@ -188,7 +160,7 @@ nav {
 
 .socialIcon li.item {
   order: 3;
-  border-top: 1px var(--harvest-gold) solid;
+  border-top: 1px var(--color-accent) solid;
 }
 
 .mainMenu li.item,
@@ -205,7 +177,7 @@ nav {
 
 .social i:hover,
 .toggle i:hover {
-  color: var(--harvest-gold);
+  color: var(--color-accent);
 }
 
 .companyName {
@@ -274,11 +246,11 @@ nav {
   .mainMenu li.item {
     display: flex;
     padding: 0 3%;
-    border-right: 1px solid var(--harvest-gold);
+    border-right: 1px solid var(--color-accent);
   }
 
   .mainMenu li.item a.current {
-    color: var(--harvest-gold);
+    color: var(--color-accent);
     cursor: default;
   }
 
@@ -321,7 +293,7 @@ nav {
 /*******************MAIN***************************/
 
 .background-image {
-  background: url(../assets/images/Lift012-background-main-.jpg);
+  background: url(../assets/images/background-main.jpg);
   background-position: 40% top;
   background-repeat: no-repeat;
   /* height: 1024px; */
@@ -341,22 +313,13 @@ nav {
   right: 0;
   bottom: 0;
   left: 0;
-  background: rgba(1, 29, 39, .5);
-}
-
-@media all and (min-width: 960px) {
-  .background-image {
-    background-position: 50% top;
-  }
+  background: var(--color-main-dark);
+  opacity: 0.5;
 }
 
 
 .tittle {
   margin: 25px 0 125px;
-}
-
-.main .text .btn {
-  margin-bottom: 150px;
 }
 
 .main .text h1 {
@@ -367,37 +330,26 @@ nav {
 
 @keyframes changeColour {
   0% {
-    color: var(--harvest-gold);
+    color: var(--color-accent);
     left: 50%;
     opacity: 0
   }
 
   50% {
-    color: var(--harvest-gold);
+    color: var(--color-accent);
     left: 0%;
     opacity: 1
   }
 
   100% {
-    color: var(--columbia-blue);
+    color: var(--color-text);
     left: 0%;
   }
 }
 
-/* from {
-  color: var(--harvest-gold);
-  left: 50px;
-}
-
-to {
-  color: var(--columbia-blue);
-  left: 0px
-} */
-
-
 #myStory,
 .coaching {
-  background: rgb(1, 29, 39, 0.7);
+  background: var(--color-main-dark-transperant);
   padding: 15px 0;
 }
 
@@ -406,33 +358,26 @@ to {
   margin: 50px 0 25px;
 }
 
-.myStory .text .btn {
+.my-story .text .btn {
   margin-bottom: 50px;
 }
 
-.myStory .image img {
-  width: 100%;
+.my-story .text {
+  padding: 0 25px;
+}
+
+.my-story .image {
+  text-align: center;
+  padding: 20px 20px 20px 0;
+
+}
+
+.my-story .image img {
+  width: 50%;
   transform: scaleX(-1);
 
 }
 
-@media all and (min-width: 800px) {
-  .myStory {
-    display: flex;
-  }
-
-  .myStory .text {
-    order: 1;
-    width: 50%;
-    padding: 20px 0 20px 20px;
-  }
-
-  .myStory .image {
-    width: 50%;
-    padding: 20px 20px 20px 0;
-  }
-
-}
 
 /**********************COACHING********************* */
 
@@ -441,43 +386,28 @@ to {
   margin-bottom: 50px;
 }
 
+.coaching .text {
+  padding: 0 25px;
+}
+
+.coaching .image {
+  text-align: center;
+}
+
 .coaching .image img {
-  height: 100%;
-  float: right;
+  width: 50%;
 }
 
 .color {
-  color: var(--harvest-gold);
+  color: var(--color-accent);
 }
-
-@media all and (min-width: 800px) {
-  .coaching {
-    display: flex;
-  }
-
-  .coaching .text {
-    padding: 0 20px 20px 0;
-    width: 50%;
-  }
-
-  .coaching .image {
-    margin-top: 28px;
-    padding: 0 0 20px 20px;
-    width: 50%;
-  }
-
-}
-
-/*************X*********MAIN*************X***********/
-
-
 
 /***********************GALLERY***********************/
 
 /* The base code is from https://www.cssscript.com/demo/pure-css-vertical-image-accordion-slider/ I just adapted it in scss and put it on codepen*/
 
 #gallery {
-  background: linear-gradient(0deg, #29657F 0%, rgba(41, 101, 127, 0) 100%);
+  background: linear-gradient(0deg, #C14700ff, #0D0E26ff, #0D0E26ff, #0D0E26ff);
   padding: 300px 0 100px;
   max-width: 1200px;
   margin: 0 auto;
@@ -542,7 +472,7 @@ to {
 }
 
 .accordion ul li:nth-child(7) {
-  background-image: url(../assets/images/gallery_Lift009.jpg);
+  background-image: url(../assets/images/gallery_Lift015.jpg);
 }
 
 .accordion ul li div {
@@ -610,33 +540,17 @@ to {
   transform: translateX(0);
 }
 
-@media screen and (max-width: 700px) {
-  body {
-    margin: 0;
-  }
 
-  .accordion {
-    height: auto;
-  }
-
-  .accordion ul li,
-  .accordion ul li:hover,
-  .accordion ul:hover li,
-  .accordion ul:hover li:hover {
-    position: relative;
-    display: table;
-    table-layout: fixed;
-    width: 100%;
-    -webkit-transition: none;
-    transition: none;
-  }
-}
 
 /***********X************GALLERY***********X************/
 
+
+/*************X*********MAIN*************X***********/
+
+
 /************************CONTACT ME************************/
 #contactMe {
-  background-color: #29657F;
+  background-color: var(--color-secodary);
   text-align: center;
   display: flex;
   justify-content: center;
@@ -649,7 +563,7 @@ to {
 }
 
 #contactMe .box a:hover {
-  color: var(--harvest-gold);
+  color: var(--color-accent);
   font-size: 1.125rem;
 }
 
@@ -663,13 +577,8 @@ to {
 }
 
 .box {
-  background-color: #011D27;
+  background-color: var(--color-main-dark);
   width: 100%;
-  /* height: 400px; */
-  /* background-size: cover; */
-  /* clip-path: polygon(0% 100%, 100% 100%, 50% -200%); */
-  /* padding-bottom: 200px; */
-  /*https://css-tricks.com/working-with-shapes-in-web-design/*/
 }
 
 #contact {
@@ -679,8 +588,7 @@ to {
 
 }
 
-
-fieldset {
+/* fieldset {
   border: medium none;
   margin: 0 0 20px;
   padding: 0;
@@ -691,9 +599,9 @@ fieldset {
 #contact input[type="email"],
 #contact textarea {
   width: 100%;
-  border: 2px solid #29657F;
+  border: 2px solid var(--color-secodary);
   border-radius: 5px;
-  background: #F1F5F8;
+  background: var(--color-text);
   margin: 0 -10px 5px;
   padding: 10px;
 }
@@ -704,7 +612,7 @@ fieldset {
   -webkit-transition: border-color 0.3s ease-in-out;
   -moz-transition: border-color 0.3s ease-in-out;
   transition: border-color 0.3s ease-in-out;
-  border: 2px solid var(--harvest-gold);
+  border: 2px solid var(--color-accent);
 }
 
 #contact textarea {
@@ -738,8 +646,8 @@ fieldset {
   width: 100%;
   border: none;
   border-radius: 5px;
-  background: var(--harvest-gold);
-  color: #F1F5F8;
+  background: var(--color-accent);
+  color: var(--color-text);
   padding: 10px 20px;
   font-size: 1rem;
   transition: transform .5s;
@@ -749,8 +657,8 @@ fieldset {
 
 #contact button[type="submit"]:hover {
   background: transparent;
-  border: 1px solid var(--harvest-gold);
-  color: var(--harvest-gold);
+  border: 1px solid var(--color-accent);
+  color: var(--color-accent);
   text-decoration: none;
   -ms-transform: scale(1.025);
   -webkit-transform: scale(1.025);
@@ -764,20 +672,20 @@ fieldset {
 #contact input:focus,
 #contact textarea:focus {
   outline: 0;
-  border: 1px solid #F1F5F8;
-}
+  border: 1px solid var(--color-text);
+} 
 
 @media screen and (min-width: 700px) {
-
-  /* .box {
+  .box {
     clip-path: polygon(0% 100%, 100% 100%, 50% -50%);
-  } */
+  }
 }
+*/
 
 /************************FOOTER************************/
 
 .footer {
-  background-color: #011D27;
+  background-color: var(--color-main-dark);
   margin-top: -1px;
   padding: 25px 0 10px;
   position: relative;
@@ -786,12 +694,12 @@ fieldset {
 }
 
 .footer p {
-  color: #F1F5F8;
+  color: var(--color-text);
   font-size: 0.75rem;
 }
 
 .footer-link {
-  color: #F1F5F8;
+  color: var(--color-text);
   font-family: 'Red Hat Text', sans-serif;
   font-size: 0.85rem;
   text-decoration: none;
@@ -799,7 +707,7 @@ fieldset {
 }
 
 .footer-link:hover {
-  color: var(--harvest-gold);
+  color: var(--color-accent);
   font-weight: 500;
 }
 
@@ -809,8 +717,6 @@ fieldset {
 
 
 /***********X************FOOTER***********X************/
-
-
 
 
 /**********************Scroll to top button**********************/
@@ -825,7 +731,7 @@ fieldset {
 }
 
 .fa-solid.fa-hand-point-up {
-  color: var(--harvest-gold);
+  color: var(--color-accent);
   opacity: 0.5;
   font-size: 1.125rem;
   z-index: 5;
@@ -836,3 +742,111 @@ fieldset {
 }
 
 /************x*********Scroll to top button************x*********/
+
+/********************* media ******************************* */
+
+@media all and (min-width: 550px) {
+  h1 {
+    font-size: 3.5rem;
+  }
+
+  h2 {
+    font-size: 2.75rem;
+  }
+
+  h3 {
+    font-size: 1.75rem;
+
+  }
+
+  h4 {
+    font-size: 1.25rem;
+  }
+
+  h6 {
+    font-size: 3rem;
+    font-weight: 600;
+    margin: 50px 0;
+  }
+}
+
+
+@media all and (min-width: 960px) {
+  .background-image {
+    background-position: 50% top;
+  }
+}
+
+
+@media all and (min-width: 800px) {
+  #myStory {
+    margin: 100px 0;
+  }
+
+  .my-story {
+    display: flex;
+  }
+
+  .my-story .text {
+    order: 1;
+    width: 50%;
+    padding: 20px 0 20px 20px;
+  }
+
+  .my-story .image {
+    width: 50%;
+    padding: 20px 20px 20px 0;
+    text-align: left;
+  }
+
+  .my-story .image img {
+    width: 75%;
+
+  }
+
+  .no-margin-text {
+    margin: 0;
+  }
+
+  .coaching {
+    display: flex;
+  }
+
+  .coaching .text {
+    padding: 0 20px 20px 0;
+    width: 50%;
+  }
+
+  .coaching .image {
+    margin-top: 28px;
+    padding: 0 0 20px 20px;
+    width: 50%;
+  }
+
+  .coaching .image img {
+    width: 75%;
+  }
+
+}
+
+@media screen and (max-width: 700px) {
+  body {
+    margin: 0;
+  }
+
+  .accordion {
+    height: auto;
+  }
+
+  .accordion ul li,
+  .accordion ul li:hover,
+  .accordion ul:hover li,
+  .accordion ul:hover li:hover {
+    position: relative;
+    display: table;
+    table-layout: fixed;
+    width: 100%;
+    -webkit-transition: none;
+    transition: none;
+  }
+}
