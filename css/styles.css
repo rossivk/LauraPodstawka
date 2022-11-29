@@ -3,7 +3,9 @@
   --color-main-dark-transperant: rgba(13, 14, 38, 0.75);
   --color-secodary: #727DBDff;
   --color-text: #DFDEDFff;
-  --color-accent: #cd692eff;
+  /* --color-accent: #cd692eff; */
+  --color-accent: #d87752ff;
+
 }
 
 html {
@@ -377,9 +379,10 @@ nav {
 
 }
 
-.my-story .image img {
+.my-story .image img .filter-images {
   width: 50%;
   transform: scaleX(-1);
+  filter: invert(61%) sepia(86%) saturate(2339%) hue-rotate(338deg) brightness(83%) contrast(92%);
 
 }
 
@@ -412,7 +415,7 @@ nav {
 /* The base code is from https://www.cssscript.com/demo/pure-css-vertical-image-accordion-slider/ I just adapted it in scss and put it on codepen*/
 
 #gallery {
-  background: linear-gradient(0deg, #C14700ff, #0D0E26ff, #0D0E26ff, #0D0E26ff);
+  background: linear-gradient(0deg, #d87752ff, #0D0E26ff, #0D0E26ff, #0D0E26ff);
   padding: 300px 0 0;
   max-width: 1200px;
   margin: 0 auto;
@@ -425,7 +428,7 @@ nav {
 
 .accordion {
   width: 100%;
-  max-width: 1080px;
+  max-width: 1200px;
   height: 250px;
   overflow: hidden;
   margin: 50px auto;
@@ -453,31 +456,31 @@ nav {
 }
 
 .accordion ul li:nth-child(1) {
-  background-image: url(../assets/images/gallery_Lift001.jpg);
+  background-image: url(../assets/images/Lift01.jpg);
 }
 
 .accordion ul li:nth-child(2) {
-  background-image: url(../assets/images/gallery_Lift002.jpg);
+  background-image: url(../assets/images/Lift02.jpg);
 }
 
 .accordion ul li:nth-child(3) {
-  background-image: url(../assets/images/gallery_Lift003.jpg);
+  background-image: url(../assets/images/Lift03.jpg);
 }
 
 .accordion ul li:nth-child(4) {
-  background-image: url(../assets/images/gallery_Lift005.jpg);
+  background-image: url(../assets/images/Lift05.jpg);
 }
 
 .accordion ul li:nth-child(5) {
-  background-image: url(../assets/images/gallery_Lift006.jpg);
+  background-image: url(../assets/images/Lift06.jpg);
 }
 
 .accordion ul li:nth-child(6) {
-  background-image: url(../assets/images/gallery_Lift008.jpg);
+  background-image: url(../assets/images/Lift08.jpg);
 }
 
 .accordion ul li:nth-child(7) {
-  background-image: url(../assets/images/gallery_Lift015.jpg);
+  background-image: url(../assets/images/Lift15.jpg);
 }
 
 .accordion ul li div {
