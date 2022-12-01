@@ -379,11 +379,9 @@ nav {
 
 }
 
-.my-story .image img .filter-images {
+.my-story .image img {
   width: 50%;
-  transform: scaleX(-1);
-  filter: invert(61%) sepia(86%) saturate(2339%) hue-rotate(338deg) brightness(83%) contrast(92%);
-
+  /* transform: scaleX(-1); */
 }
 
 
