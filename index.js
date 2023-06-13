@@ -46,3 +46,20 @@ scrollTopBtn.addEventListener("click", function () {
 });
 
 
+//read more
+
+const readMore = document.getElementsByClassName('read-more')[0];
+const readMoreText = document.getElementsByClassName('read-more-text')[0];
+
+readMore.addEventListener('click', () => {
+  readMoreText.classList.toggle('read-more-text');
+  if (readMoreText.classList.contains("read-more-text")) {
+    readMore.innerHTML = '...read more';
+  } else {
+    readMore.innerHTML = 'show less';
+  }
+})
+
+
+
+
