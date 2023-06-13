@@ -391,7 +391,7 @@ nav {
 }
 
 .my-story {
-  background-image: url(/assets/images/lp-background-main.jpg);
+  background-image: url(../assets/images/lp-background-main.jpg);
   background-position: 55%;
   background-repeat: no-repeat;
   position: relative;
@@ -417,7 +417,7 @@ nav {
 }
 
 .coaching {
-  background-image: url(/assets/images/DSC02904-laura-purple.jpg);
+  background-image: url(../assets/images/DSC02904-laura-purple.jpg);
   background-position: 45% top;
   background-repeat: no-repeat;
   background-size: cover;
