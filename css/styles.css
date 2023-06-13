@@ -404,7 +404,7 @@ nav {
 }
 
 .my-story .text {
-  padding: 0 10px;
+  padding: 10px;
   background-color: rgba(13, 14, 38, 0.8);
 }
 
@@ -749,7 +749,7 @@ nav {
   }
 
   .my-story {
-    background-position: 10%;
+    background-position: right 90% top 25%;
   }
 
   .my-story .text {
@@ -769,7 +769,7 @@ nav {
 
 
   .my-story .text {
-    padding: 0 10px;
+    padding: 10px;
   }
 
 
